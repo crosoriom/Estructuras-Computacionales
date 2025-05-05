@@ -163,6 +163,14 @@ wait_interrupt:
 ### SysTick Interrupt Handler
 increments **timer_ms** every millisecond.
 ```assembly
+    .thumb_func
+Systick_Handler:
+    movw r0, #:lower16:timer_ms
+    movt r0, #:upper16:timer_ms
+    ldr r1, [r0]
+    adds r1, r1, #1   @ Increment time counter by 1ms
+    str r1, [r0]
+    bx lr
 ```
 ---
 
