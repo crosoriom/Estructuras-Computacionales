@@ -1,5 +1,5 @@
 // Memory section
-    .section bss
+    .section .bss
     .global timer_ms
 timer_ms:
     .word 0
@@ -10,7 +10,7 @@ led_timer_active:
 
 // Program section
 
-    .section text
+    .section .text
     .syntax unified
     .thumb
     .global main
@@ -25,10 +25,10 @@ led_timer_active:
 .equ RCC,           0x40021000
 .equ RCC_AHB2ENR,   RCC + 0x4C
 .equ GPIOA,         0x48000000
-.equ GPIOA_MODDER,  GPIOA + 0x00
+.equ GPIOA_MODER,  GPIOA + 0x00
 .equ GPIOA_ODR,     GPIOA + 0x14
 .equ GPIOC,         0x48000800
-.equ GPIOC_MODDER,  GPIOC + 0x00
+.equ GPIOC_MODER,  GPIOC + 0x00
 .equ GPIOC_IDR,     GPIOC + 0x10
 .equ LD2_PIN,       5
 .equ LD2_TIME,      3000
@@ -97,7 +97,6 @@ check_timer:
     mov r1, #0
     strb r1, [r6]                   // Turn off the led timer
 wait_interrupt:
-    wfi
     b loop
 
 // LD2 configuration
@@ -108,8 +107,8 @@ init_led:
     orr r1, r1, #(1 << 0)   // Set the bit for the GPIOA clock
     str r1, [r0]
     
-    movw r0, #:lower16:GPIOA_MODDER
-    movt r0, #:upper16:GPIOA_MODDER
+    movw r0, #:lower16:GPIOA_MODER
+    movt r0, #:upper16:GPIOA_MODER
     ldr r1, [r0]
     bic r1, r1, #(0b11 << (LD2_PIN * 2))
     orr r1, r1, #(0b01 << (LD2_PIN * 2))    // Led pin configured as output (01 value)
@@ -125,8 +124,8 @@ init_button:
     orr r1, r1, #(1 << 2)   // Set the bit for the GPIOC clock
     str r1, [r0]
 
-    movw r0, #:lower16:GPIOC_MODDER
-    movt r0, #:upper16:GPIOC_MODDER
+    movw r0, #:lower16:GPIOC_MODER
+    movt r0, #:upper16:GPIOC_MODER
     ldr r1, [r0]
     bic r1, r1, #(0b11 << (BTN_PIN * 2))    // Button pin configured as input (00 value)
     str r1, [r0]
@@ -143,7 +142,7 @@ init_systick:
     str r1, [r0]
     
     movw r0, #:lower16:STK_CTRL
-    movt r0, #:lower16:STK_CTRL
+    movt r0, #:upper16:STK_CTRL
     movs r1, #(1 << 0)|(1 << 1)|(1 << 2)    // Enable the SysTick counter, the counter exception and configure the clock fot the counter
     str r1, [r0]
     
@@ -155,6 +154,7 @@ read_gpio:
     movt r0, #:upper16:GPIOC_IDR
     ldr r1, [r0]
     tst r1, #(1 << BTN_PIN)
+    ite eq
     moveq r0, #1
     movne r0, #0
 
@@ -164,7 +164,7 @@ read_gpio:
     .thumb_func
 Systick_Handler:
     movw r0, #:lower16:timer_ms
-    movt r0, #:lower16:timer_ms
+    movt r0, #:upper16:timer_ms
     ldr r1, [r0]
     adds r1, r1, #1         // Increment the time counter 1ms
     str r1, [r0]

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LED_BUTTON_BLINK",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LED_BUTTON_BLINK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LED_BUTTON_BLINK-Debug-a01448de6cb22c460d18.json",
+					"name" : "LED_BUTTON_BLINK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/criso/Documents/UNAL/EstructurasComputacionales/[ASM]LED_BUTTON_BLINK/LED_BUTTON_BLINK/build/debug",
+		"source" : "C:/Users/criso/Documents/UNAL/EstructurasComputacionales/[ASM]LED_BUTTON_BLINK/LED_BUTTON_BLINK"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

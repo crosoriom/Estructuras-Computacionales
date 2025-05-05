@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(ASM_Proyect)
+project(ControlDeAcceso)
 enable_language(C ASM)
 
 set(CMAKE_SYSTEM_NAME               Generic)
@@ -30,7 +30,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 include_directories(${CMAKE_SOURCE_DIR}/drivers)
 
 set(SOURCES
-    ${CMAKE_SOURCE_DIR}/startup_stm32l476xx.s
+    ${CMAKE_SOURCE_DIR}/startup_stm32l476rgtx.s
     ${CMAKE_SOURCE_DIR}/src/main.s
     ${CMAKE_SOURCE_DIR}/User/syscalls.c
     ${CMAKE_SOURCE_DIR}/User/sysmem.c
