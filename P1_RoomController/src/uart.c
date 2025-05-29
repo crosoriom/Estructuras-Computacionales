@@ -18,6 +18,9 @@ void usart_init(usart_config_t *usart_config_struct)
     PINx rx = usart_config_struct->RX_PIN;
     stopBit_t stop = usart_config_struct->STOP_BITS;
     lenghtBit_t wordLenght = usart_config_struct->WORD_LENGHT;
+    parity_t parity = NO_PARITY;
+    if(usart_config_struct->PARITY != parity)
+        parity = usart_config_struct->PARITY;
     int baudRate = usart_config_struct->BAUDRATE;
 
     usart_activate(usart_number(USARTx));
@@ -29,6 +32,7 @@ void usart_init(usart_config_t *usart_config_struct)
     USARTx->BRR = 4000000 / baudRate;                   //set the baud rate
     usart_set_word_lenght(USARTx, wordLenght);
     usart_set_stop_bits(USARTx, stop);
+    usart_set_parity(USARTx, parity);
     USARTx->CR1 |= ENABLE_TX | ENABLE_RX;               //enable tx and rx
     USARTx->CR1 |= ENABLE_USART;                        //enable uart
 }
@@ -66,6 +70,16 @@ void usart_set_word_lenght(usart_t *USARTx, lenghtBit_t lenght)
             USARTx->CR1 |= WORD_7BITS;
             break;
     }
+}
+
+void usart_set_parity(usart_t *USARTx, parity_t parity)
+{
+    if(parity == NO_PARITY)
+        return;
+    USARTx->CR1 |= (0x1U << 10);
+    USARTx->CR1 &= ~(0x1U << 9);
+    if(parity == ODD_PARITY)
+        USARTx->CR1 |= (0x1U << 9);
 }
 
 void enable_RXNE(usart_t *USARTx)

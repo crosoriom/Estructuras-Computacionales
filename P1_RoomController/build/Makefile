@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM
+CMAKE_SOURCE_DIR = /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/P1_RoomController
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build
+CMAKE_BINARY_DIR = /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/P1_RoomController/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build/CMakeFiles /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/P1_RoomController/build/CMakeFiles /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/P1_RoomController/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/P1_RoomController/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PWM
+# Target rules for targets named P1_RoomController
 
 # Build rule for target.
-PWM: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PWM
-.PHONY : PWM
+P1_RoomController: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 P1_RoomController
+.PHONY : P1_RoomController
 
 # fast build rule for target.
-PWM/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/build
-.PHONY : PWM/fast
+P1_RoomController/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/build
+.PHONY : P1_RoomController/fast
 
 User/syscalls.o: User/syscalls.c.o
 .PHONY : User/syscalls.o
 
 # target to build an object file
 User/syscalls.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/User/syscalls.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/User/syscalls.c.o
 .PHONY : User/syscalls.c.o
 
 User/syscalls.i: User/syscalls.c.i
@@ -142,7 +142,7 @@ User/syscalls.i: User/syscalls.c.i
 
 # target to preprocess a source file
 User/syscalls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/User/syscalls.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/User/syscalls.c.i
 .PHONY : User/syscalls.c.i
 
 User/syscalls.s: User/syscalls.c.s
@@ -150,7 +150,7 @@ User/syscalls.s: User/syscalls.c.s
 
 # target to generate assembly for a file
 User/syscalls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/User/syscalls.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/User/syscalls.c.s
 .PHONY : User/syscalls.c.s
 
 User/sysmem.o: User/sysmem.c.o
@@ -158,7 +158,7 @@ User/sysmem.o: User/sysmem.c.o
 
 # target to build an object file
 User/sysmem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/User/sysmem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/User/sysmem.c.o
 .PHONY : User/sysmem.c.o
 
 User/sysmem.i: User/sysmem.c.i
@@ -166,7 +166,7 @@ User/sysmem.i: User/sysmem.c.i
 
 # target to preprocess a source file
 User/sysmem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/User/sysmem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/User/sysmem.c.i
 .PHONY : User/sysmem.c.i
 
 User/sysmem.s: User/sysmem.c.s
@@ -174,7 +174,7 @@ User/sysmem.s: User/sysmem.c.s
 
 # target to generate assembly for a file
 User/sysmem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/User/sysmem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/User/sysmem.c.s
 .PHONY : User/sysmem.c.s
 
 src/exti.o: src/exti.c.o
@@ -182,7 +182,7 @@ src/exti.o: src/exti.c.o
 
 # target to build an object file
 src/exti.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/exti.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/exti.c.o
 .PHONY : src/exti.c.o
 
 src/exti.i: src/exti.c.i
@@ -190,7 +190,7 @@ src/exti.i: src/exti.c.i
 
 # target to preprocess a source file
 src/exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/exti.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/exti.c.i
 .PHONY : src/exti.c.i
 
 src/exti.s: src/exti.c.s
@@ -198,7 +198,7 @@ src/exti.s: src/exti.c.s
 
 # target to generate assembly for a file
 src/exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/exti.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/exti.c.s
 .PHONY : src/exti.c.s
 
 src/gpio.o: src/gpio.c.o
@@ -206,7 +206,7 @@ src/gpio.o: src/gpio.c.o
 
 # target to build an object file
 src/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/gpio.c.o
 .PHONY : src/gpio.c.o
 
 src/gpio.i: src/gpio.c.i
@@ -214,7 +214,7 @@ src/gpio.i: src/gpio.c.i
 
 # target to preprocess a source file
 src/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/gpio.c.i
 .PHONY : src/gpio.c.i
 
 src/gpio.s: src/gpio.c.s
@@ -222,7 +222,7 @@ src/gpio.s: src/gpio.c.s
 
 # target to generate assembly for a file
 src/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/gpio.c.s
 .PHONY : src/gpio.c.s
 
 src/main.o: src/main.c.o
@@ -230,7 +230,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -238,7 +238,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -246,7 +246,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/nvic.o: src/nvic.c.o
@@ -254,7 +254,7 @@ src/nvic.o: src/nvic.c.o
 
 # target to build an object file
 src/nvic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/nvic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/nvic.c.o
 .PHONY : src/nvic.c.o
 
 src/nvic.i: src/nvic.c.i
@@ -262,7 +262,7 @@ src/nvic.i: src/nvic.c.i
 
 # target to preprocess a source file
 src/nvic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/nvic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/nvic.c.i
 .PHONY : src/nvic.c.i
 
 src/nvic.s: src/nvic.c.s
@@ -270,7 +270,7 @@ src/nvic.s: src/nvic.c.s
 
 # target to generate assembly for a file
 src/nvic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/nvic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/nvic.c.s
 .PHONY : src/nvic.c.s
 
 src/rcc.o: src/rcc.c.o
@@ -278,7 +278,7 @@ src/rcc.o: src/rcc.c.o
 
 # target to build an object file
 src/rcc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/rcc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/rcc.c.o
 .PHONY : src/rcc.c.o
 
 src/rcc.i: src/rcc.c.i
@@ -286,7 +286,7 @@ src/rcc.i: src/rcc.c.i
 
 # target to preprocess a source file
 src/rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/rcc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/rcc.c.i
 .PHONY : src/rcc.c.i
 
 src/rcc.s: src/rcc.c.s
@@ -294,15 +294,39 @@ src/rcc.s: src/rcc.c.s
 
 # target to generate assembly for a file
 src/rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/rcc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/rcc.c.s
 .PHONY : src/rcc.c.s
+
+src/roomcontrol.o: src/roomcontrol.c.o
+.PHONY : src/roomcontrol.o
+
+# target to build an object file
+src/roomcontrol.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/roomcontrol.c.o
+.PHONY : src/roomcontrol.c.o
+
+src/roomcontrol.i: src/roomcontrol.c.i
+.PHONY : src/roomcontrol.i
+
+# target to preprocess a source file
+src/roomcontrol.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/roomcontrol.c.i
+.PHONY : src/roomcontrol.c.i
+
+src/roomcontrol.s: src/roomcontrol.c.s
+.PHONY : src/roomcontrol.s
+
+# target to generate assembly for a file
+src/roomcontrol.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/roomcontrol.c.s
+.PHONY : src/roomcontrol.c.s
 
 src/syscfg.o: src/syscfg.c.o
 .PHONY : src/syscfg.o
 
 # target to build an object file
 src/syscfg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/syscfg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/syscfg.c.o
 .PHONY : src/syscfg.c.o
 
 src/syscfg.i: src/syscfg.c.i
@@ -310,7 +334,7 @@ src/syscfg.i: src/syscfg.c.i
 
 # target to preprocess a source file
 src/syscfg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/syscfg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/syscfg.c.i
 .PHONY : src/syscfg.c.i
 
 src/syscfg.s: src/syscfg.c.s
@@ -318,15 +342,63 @@ src/syscfg.s: src/syscfg.c.s
 
 # target to generate assembly for a file
 src/syscfg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/syscfg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/syscfg.c.s
 .PHONY : src/syscfg.c.s
+
+src/systick.o: src/systick.c.o
+.PHONY : src/systick.o
+
+# target to build an object file
+src/systick.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/systick.c.o
+.PHONY : src/systick.c.o
+
+src/systick.i: src/systick.c.i
+.PHONY : src/systick.i
+
+# target to preprocess a source file
+src/systick.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/systick.c.i
+.PHONY : src/systick.c.i
+
+src/systick.s: src/systick.c.s
+.PHONY : src/systick.s
+
+# target to generate assembly for a file
+src/systick.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/systick.c.s
+.PHONY : src/systick.c.s
+
+src/tim.o: src/tim.c.o
+.PHONY : src/tim.o
+
+# target to build an object file
+src/tim.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/tim.c.o
+.PHONY : src/tim.c.o
+
+src/tim.i: src/tim.c.i
+.PHONY : src/tim.i
+
+# target to preprocess a source file
+src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/tim.c.i
+.PHONY : src/tim.c.i
+
+src/tim.s: src/tim.c.s
+.PHONY : src/tim.s
+
+# target to generate assembly for a file
+src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/tim.c.s
+.PHONY : src/tim.c.s
 
 src/uart.o: src/uart.c.o
 .PHONY : src/uart.o
 
 # target to build an object file
 src/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/uart.c.o
 .PHONY : src/uart.c.o
 
 src/uart.i: src/uart.c.i
@@ -334,7 +406,7 @@ src/uart.i: src/uart.c.i
 
 # target to preprocess a source file
 src/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/uart.c.i
 .PHONY : src/uart.c.i
 
 src/uart.s: src/uart.c.s
@@ -342,7 +414,7 @@ src/uart.s: src/uart.c.s
 
 # target to generate assembly for a file
 src/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/src/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/src/uart.c.s
 .PHONY : src/uart.c.s
 
 startup_stm32l476rgtx.o: startup_stm32l476rgtx.s.o
@@ -350,7 +422,7 @@ startup_stm32l476rgtx.o: startup_stm32l476rgtx.s.o
 
 # target to build an object file
 startup_stm32l476rgtx.s.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PWM.dir/build.make CMakeFiles/PWM.dir/startup_stm32l476rgtx.s.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_RoomController.dir/build.make CMakeFiles/P1_RoomController.dir/startup_stm32l476rgtx.s.o
 .PHONY : startup_stm32l476rgtx.s.o
 
 # Help Target
@@ -361,7 +433,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PWM"
+	@echo "... P1_RoomController"
 	@echo "... User/syscalls.o"
 	@echo "... User/syscalls.i"
 	@echo "... User/syscalls.s"
@@ -383,9 +455,18 @@ help:
 	@echo "... src/rcc.o"
 	@echo "... src/rcc.i"
 	@echo "... src/rcc.s"
+	@echo "... src/roomcontrol.o"
+	@echo "... src/roomcontrol.i"
+	@echo "... src/roomcontrol.s"
 	@echo "... src/syscfg.o"
 	@echo "... src/syscfg.i"
 	@echo "... src/syscfg.s"
+	@echo "... src/systick.o"
+	@echo "... src/systick.i"
+	@echo "... src/systick.s"
+	@echo "... src/tim.o"
+	@echo "... src/tim.i"
+	@echo "... src/tim.s"
 	@echo "... src/uart.o"
 	@echo "... src/uart.i"
 	@echo "... src/uart.s"

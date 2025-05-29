@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(PWM)
+project(P1_RoomController)
 enable_language(C ASM)
 
 set(CMAKE_SYSTEM_NAME               Generic)
@@ -31,6 +31,7 @@ include_directories(${CMAKE_SOURCE_DIR}/drivers)
 
 set(SOURCES
     ${CMAKE_SOURCE_DIR}/startup_stm32l476rgtx.s
+    ${CMAKE_SOURCE_DIR}/src/roomcontrol.c
     ${CMAKE_SOURCE_DIR}/src/systick.c
     ${CMAKE_SOURCE_DIR}/src/syscfg.c
     ${CMAKE_SOURCE_DIR}/src/main.c

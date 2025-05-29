@@ -3,6 +3,7 @@
 int state_door = 0;
 int open_tick = 0;
 int lamp_state = 20;
+int button_press_lamp_state;
 
 void room_app_init()
 {
@@ -55,7 +56,7 @@ void uart_received(char command)
             usart_send_string(USART2, "Puerta cerrada remotamente.\r\n");
             break;
         case 's':
-            usart_send_string(USART2, "\t- Lámpara: {lamp_state}%\r\n");
+            usart_send_string(USART2, "\t- Lámpara: %d %\r\n");
             if(state_door == 0) usart_send_string(USART2, "\t- Puerta: cerrada\r\n");
             else usart_send_string(USART2, "\t- Puerta: abierta\r\n");
         default:
@@ -69,6 +70,8 @@ void button_pressed()
 {
     usart_send_string(USART2, "Evento: Botón presionado - Abriendo puerta.\r\n");
     gpio_set_highLevel(EXTERNAL_LED);
+    button_press_lamp_state = lamp_state;
+    pwm_set_dutyCycle(TIM3, TIM_CHANNEL1, 100);
     state_door = 1;
     open_tick = systick_getTick();
 }
@@ -79,5 +82,6 @@ void control_door()
         state_door = 0;
         gpio_set_lowLevel(EXTERNAL_LED);
         usart_send_string(USART2, "Puerta cerrada de forma automática.");
+        pwm_set_dutyCycle(TIM3, TIM_CHANNEL1, lamp_state);
     }
 }

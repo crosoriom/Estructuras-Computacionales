@@ -49,6 +49,12 @@ typedef enum {
     NINE_BITS_LENGHT
 }lenghtBit_t;
 
+typedef enum {
+    EVEN_PARITY,
+    ODD_PARITY,
+    NO_PARITY
+}parity_t;
+
 typedef struct {
     usart_t *USART_PORT;
     gpio_t *GPIO_PORT;
@@ -56,6 +62,7 @@ typedef struct {
     PINx RX_PIN;
     stopBit_t STOP_BITS;
     lenghtBit_t WORD_LENGHT;
+    parity_t PARITY;
     int BAUDRATE;
 }usart_config_t;
 
@@ -76,6 +83,7 @@ typedef struct {
 void usart_init(usart_config_t *usart_config_struct);
 void usart_set_stop_bits(usart_t *USARTx, stopBit_t stop);
 void usart_set_word_lenght(usart_t *USARTx, lenghtBit_t lenght);
+void usart_set_parity(usart_t *USARTx, parity_t parity);
 void enable_RXNE(usart_t *USARTx);
 void usart_send_string(usart_t *USARTx, const char *str);
 char* usart_receive_string(usart_t *USARTx);

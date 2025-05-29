@@ -156,25 +156,6 @@ typedef struct {
     int period;
 } pwm_config_t;
 
-/**
- * @brief Mapea que Timer debe ser usado por cada pin
- *
- * La función toma un GPIO pin y retorna el valor de
- * la función alternativa (AF) que debe configurarse
- * en el pin
- *
- * @param[in] GPIOx el valor entero que indica el
- *             puerto del pin (ej. GPIOA = 0, GPIOH = 7)
- * @param[in] pin pin a usar
- *
- * @return valor de la función alternatuva en hexadecimal
- * sin signo
- *
- * @warning Si el GPIO pin no se puede mapear a un
- * timer específico, la función retornará 0xFFU.
- */
-int timer_af_selection(int GPIOx, int pin);
-
 void pwm_init(pwm_config_t *configStructure);
 void pwm_set_dutyCycle(GeneralPurpose_Timer_t *TIMx, timer_channel_t channel, int dutyCycle);
 
