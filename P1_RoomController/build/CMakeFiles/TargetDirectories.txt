@@ -1,0 +1,3 @@
+/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build/CMakeFiles/PWM.dir
+/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build/CMakeFiles/edit_cache.dir
+/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -mcpu=cortex-m4 -mthumb -x assembler-with-cpp -o CMakeFiles/PWM.dir/startup_stm32l476rgtx.s.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/startup_stm32l476rgtx.s",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/startup_stm32l476rgtx.s",
+  "output": "CMakeFiles/PWM.dir/startup_stm32l476rgtx.s.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/syscfg.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/syscfg.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/syscfg.c",
+  "output": "CMakeFiles/PWM.dir/src/syscfg.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/main.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/main.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/main.c",
+  "output": "CMakeFiles/PWM.dir/src/main.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/gpio.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/gpio.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/gpio.c",
+  "output": "CMakeFiles/PWM.dir/src/gpio.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/exti.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/exti.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/exti.c",
+  "output": "CMakeFiles/PWM.dir/src/exti.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/uart.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/uart.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/uart.c",
+  "output": "CMakeFiles/PWM.dir/src/uart.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/nvic.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/nvic.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/nvic.c",
+  "output": "CMakeFiles/PWM.dir/src/nvic.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/src/rcc.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/rcc.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src/rcc.c",
+  "output": "CMakeFiles/PWM.dir/src/rcc.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/User/syscalls.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User/syscalls.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User/syscalls.c",
+  "output": "CMakeFiles/PWM.dir/User/syscalls.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/PWM.dir/User/sysmem.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User/sysmem.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/PWM/User/sysmem.c",
+  "output": "CMakeFiles/PWM.dir/User/sysmem.c.o"
+}
+]
