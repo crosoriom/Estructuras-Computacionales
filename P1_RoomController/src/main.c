@@ -7,7 +7,7 @@ usart_config_t usart_config = {
     .RX_PIN = PIN_3,
     .BAUDRATE = 115200,
     .STOP_BITS = ONE_STOP_BIT,
-    .WORD_LENGHT = EIGHT_BITS_LENGHT,
+    .WORD_LENGHT = NINE_BITS_LENGHT,
     .PARITY = ODD_PARITY
 };
 
@@ -26,12 +26,14 @@ int main()
     configure_gpio_output(EXTERNAL_LED);
     usart_init(&usart_config);
     usart_interrupt_enable(2);
-    pwm_init(&pwm_config);
+    //pwm_init(&pwm_config);
     room_app_init();
     for(;;) {
         control_door();
-        if(systick_getTick() - actualTick >= 500)
+        if(systick_getTick() - actualTick >= 500) {
             gpio_toggle_level(HEARTBEAT_LED);
+            actualTick = systick_getTick();
+        }
     }
     return 0;
 }
