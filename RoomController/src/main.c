@@ -1,0 +1,75 @@
+#include "main.h"
+
+usart_config_t usart_config = {
+    .USART_PORT = USART2,
+    .GPIO_PORT = GPIOA,
+    .TX_PIN = PIN_2,
+    .RX_PIN = PIN_3,
+    .BAUDRATE = 115200,
+    .STOP_BITS = ONE_STOP_BIT,
+    .WORD_LENGHT = NINE_BITS_LENGHT,
+    .PARITY = ODD_PARITY
+};
+/*
+pwm_config_t pwm_config = {
+    .pwmTimer = TIM2,
+    .pwmChannel = TIM_CHANNEL1,
+    .period = PWM_PERIOD,
+    .prescaler = PWM_PRESCALER
+};
+*/
+
+keypad_config_t keypad = {
+    .row_port = {KEYPAD_ROW_PORTS},
+    .row_pin = {KEYPAD_ROW_PINS},
+    .col_port = {KEYPAD_COL_PORTS},
+    .col_pin = {KEYPAD_COL_PINS}
+};
+
+int main()
+{
+    systick_init(4000);
+    gpio_interrupt_enable(BUTTON, FALLING_EDGE);
+    configure_gpio_output(HEARTBEAT_LED);
+    //configure_gpio_output(EXTERNAL_LED);
+    usart_init(&usart_config);
+    usart_interrupt_enable(2);
+    //pwm_init(&pwm_config);
+    //room_app_init();
+    keypad_init(&keypad);
+    for(;;) {
+        control_door();
+        if(systick_getTick() - actualTick >= 500) {
+            gpio_toggle_level(HEARTBEAT_LED);
+            actualTick = systick_getTick();
+        }
+    }
+    return 0;
+}
+
+void EXTI15_10_IRQHandler(void)
+{
+    if(EXTI->PR1 & (1 << 13)) {
+        button_pressed();
+    }
+    if(EXTI->PR1 & (1 << 10))
+        keypad_scan_and_store(10);
+}
+
+void EXTI9_5_IRQHandler(void)
+{
+    if(EXTI->PR1 & (1 << 9))
+        keypad_scan_and_store(9);
+    if(EXTI->PR1 & (1 << 8))
+        keypad_scan_and_store(8);
+    if(EXTI->PR1 & (1 << 7))
+        keypad_scan_and_store(7);
+}
+
+void USART2_IRQHandler(void)
+{
+    if(USART2->ISR & (1 << 5)) {
+        char command = (char)usart_receive_string(USART2);
+        //uart_received(command);
+    }
+}
