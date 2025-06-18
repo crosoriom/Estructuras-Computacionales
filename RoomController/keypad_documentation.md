@@ -132,8 +132,8 @@ This flowchart illustrates the logic inside the `keypad_scan_and_store()` functi
 ```mermaid
 graph TD
     A[Key Press pulls a Column Pin LOW] --> B{EXTI Interrupt Triggered};
-    B --> C[ISR calls keypad_scan_and_store(pin)];
-    C --> D[Press Debounce: delay(1ms)];
+    B --> C["ISR calls keypad_scan_and_store(pin)"];
+    C --> D["Press Debounce: delay(1ms)"];
     D --> E{Is Triggered Pin still LOW?};
     E -- No --> F[False Trigger: Clear EXTI & Return];
     E -- Yes --> G[Identify Triggered Column & Disable ALL Column EXTIs];
@@ -141,7 +141,7 @@ graph TD
     subgraph Scan Routine
         G --> H[Start Row Scan Loop: row = 0];
         H --> I[Set current Row Pin LOW];
-        I --> J[Settle Delay: delay(50µs)];
+        I --> J["Settle Delay: delay(50µs)"];
         J --> K{Is Triggered Column Pin now LOW?};
         K -- Yes --> L[Key Found! Get Char from keypad_map];
         L --> M[Write Character to Ring Buffer];
@@ -155,7 +155,7 @@ graph TD
     N --> Q;
     Q --> R[Set All Row Pins HIGH];
     R --> S[Un-press Debounce: Wait for Pin to go HIGH];
-    S --> T[Settle Delay: delay(50ms)];
+    S --> T["Settle Delay: delay(50ms)"];
     T --> U[Re-enable ALL Column EXTIs];
     U --> V[Return from function];
 ```
