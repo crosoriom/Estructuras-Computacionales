@@ -38,4 +38,6 @@ uint32_t systick_getTick(void);
  */
 void systick_reset(void);
 
+void delay(uint32_t time);
+
 #endif

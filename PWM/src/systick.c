@@ -36,3 +36,12 @@ void SysTick_Handler(void)
 {
 	tick_counter++;
 }
+
+void delay(uint32_t time)
+{
+    uint32_t start_tick = systick_getTick();
+    while((start_tick + time) - systick_getTick() != 0)
+        ;
+
+    return ;
+}

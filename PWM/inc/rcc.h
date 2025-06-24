@@ -2,8 +2,15 @@
 #define RCC_H
 
 #include <stdint.h>
+#include "flash.h"
 
 #define RCC ((ResetClockControl_t *)0x40021000UL)
+
+#define HSI_CLOCK_ENABLE (0x1 << 8)
+#define HSI_CLOCK_READY (0x1 << 10)
+#define HSI_SWS_READY (0x1 << 2)
+
+#define MSI_READY (0x1 << 1)
 
 typedef struct {
 	volatile uint32_t CR;
@@ -44,6 +51,12 @@ typedef struct {
 	volatile uint32_t BDCR;
 	volatile uint32_t CSR;
 }ResetClockControl_t;
+
+typedef enum {
+	MSI_CLOCK,
+	HSI_CLOCK,
+	PLL_CLOCK
+}rcc_clock_t;
 
 /**
  * @brief Activa el reloj de SysCfg
@@ -86,6 +99,8 @@ void gpio_activate(uint8_t gpio);
  * nada.
  */
 void usart_activate(uint8_t usart);
+
+void rcc_clock_selector(rcc_clock_t systemClock);
 
 /**
  * @brief	Activa el reloj para los timers

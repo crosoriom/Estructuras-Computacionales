@@ -57,8 +57,8 @@ void configure_gpio_usart(gpio_t *GPIOx, PINx pin)
         GPIOx->AFRH &= ~(0xFU << (4 * pin));
         GPIOx->AFRH |= (0x7U << (4 * pin));
     }
-    GPIOx->OSPEEDR |= (0x3U <<(2 * pin));               //gpio CLK to very high speed for uart com
-    GPIOx->PUPDR &= ~(0x3U <<(2 * pin));                //no pull-up pull-down mode
+    GPIOx->OSPEEDR |= (0x3U << (2 * pin));               //gpio CLK to very high speed for uart com
+    GPIOx->PUPDR &= ~(0x3U << (2 * pin));                //no pull-up pull-down mode
 }
 
 void configure_gpio_pwm(gpio_t *GPIOx, PINx pin, uint8_t alternateFunction)
@@ -73,6 +73,8 @@ void configure_gpio_pwm(gpio_t *GPIOx, PINx pin, uint8_t alternateFunction)
         GPIOx->AFRH &= ~(0xFU << (4 * pin));
         GPIOx->AFRH |= (alternateFunction << (4 * pin));
     }
+	GPIOx->OSPEEDR |= (0x3U << (2 * pin));
+	GPIOx->PUPDR &= ~(0x3U << (2* pin));
 }
 
 void gpio_set_highLevel(gpio_t *GPIOx, PINx pin)

@@ -1,81 +1,171 @@
 #include "tim.h"
 
-int get_gptim_number(GeneralPurpose_Timer_t *TIMx)
+gpio_af_map_t gpio_timmer_map(void *Timer, timer_channel_t channel)
 {
-    if(TIMx == TIM2) return 2;
-    else if(TIMx == TIM3) return 3;
-    else if(TIMx == TIM4) return 4;
-    else if(TIMx == TIM5) return 5;
-    else return 0;
+    gpio_af_map_t result = {
+        .GPIOx = 0
+    };
+    if(Timer == TIM2)
+        switch (channel) {
+        case TIM_CHANNEL1:
+            result.GPIOx = GPIOA;
+            result.pin = 5;
+            result.afNumber = 1;
+            break;
+        case TIM_CHANNEL2:
+            result.GPIOx = GPIOB;
+            result.pin = 3;
+            result.afNumber = 1;
+            break;
+        case TIM_CHANNEL3:
+            result.GPIOx = GPIOB;
+            result.pin = 10;
+            result.afNumber = 1;
+            break;
+        case TIM_CHANNEL4:
+            result.GPIOx = GPIOB;
+            result.pin = 11;
+            result.afNumber = 1;
+            break;
+        }
+    if(Timer == TIM3)
+        switch (channel) {
+        case TIM_CHANNEL1:
+            result.GPIOx = GPIOA;
+            result.pin = 6;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL2:
+            result.GPIOx = GPIOA;
+            result.pin = 7;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL3:
+            result.GPIOx = GPIOB;
+            result.pin = 0;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL4:
+            result.GPIOx = GPIOB;
+            result.pin = 1;
+            result.afNumber = 2;
+            break;
+        }
+    if(Timer == TIM4)
+        switch (channel) {
+        case TIM_CHANNEL1:
+            result.GPIOx = GPIOB;
+            result.pin = 6;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL2:
+            result.GPIOx = GPIOB;
+            result.pin = 7;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL3:
+            result.GPIOx = GPIOB;
+            result.pin = 8;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL4:
+            result.GPIOx = GPIOB;
+            result.pin = 9;
+            result.afNumber = 2;
+            break;
+        }
+    if(Timer == TIM5)
+        switch (channel) {
+        case TIM_CHANNEL1:
+            result.GPIOx = GPIOA;
+            result.pin = 0;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL2:
+            result.GPIOx = GPIOA;
+            result.pin = 1;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL3:
+            result.GPIOx = GPIOA;
+            result.pin = 2;
+            result.afNumber = 2;
+            break;
+        case TIM_CHANNEL4:
+            result.GPIOx = GPIOA;
+            result.pin = 3;
+            result.afNumber = 2;
+            break;
+        }
+    return result;
 }
 
-int timer_selection(int GPIOx, int pin)
+void timer_clock_enable(void *Timer)
 {
-    if(GPIOx == 0) {
-        if (pin == 0) return 0x1U; // TIM2_CH1, TIM2_ETR (AF1), TIM5_CH1 (AF2), TIM8_ETR (AF1) - Prioritizing TIM2/TIM5/TIM8 AF1/AF2
-        if (pin == 1) return 0x1U; // TIM2_CH2 (AF1), TIM5_CH2 (AF2)
-        if (pin == 2) return 0x1U; // TIM2_CH3 (AF1), TIM5_CH3 (AF2), TIM15_CH1 (AF14)
-        if (pin == 3) return 0x1U; // TIM2_CH4 (AF1), TIM5_CH4 (AF2), TIM15_CH2 (AF14)
-        if (pin == 5) return 0x1U; // TIM2_CH1, TIM2_ETR (AF1)
-        if (pin == 6) return 0x2U; // TIM3_CH1 (AF2), TIM1_BKIN (AF1), TIM8_BKIN (AF2), TIM16_CH1 (AF14)
-        if (pin == 7) return 0x2U; // TIM3_CH2 (AF2), TIM1_CH1N (AF1), TIM8_CH1N (AF2), TIM17_CH1 (AF14)
-        if (pin == 8) return 0x1U; // TIM1_CH1 (AF1)
-        if (pin == 9) return 0x1U; // TIM1_CH2 (AF1), TIM15_BKIN (AF14)
-        if (pin == 10) return 0x1U; // TIM1_CH3 (AF1), TIM17_BKIN (AF14)
-        if (pin == 11) return 0x1U; // TIM1_CH4 (AF1), TIM1_BKIN2 (AF1)
-        if (pin == 15) return 0x1U; // TIM2_CH1, TIM2_ETR (AF1)
-    } else if(GPIOx == 1) {
-        if (pin == 0) return 0x2U; // TIM3_CH3 (AF2), TIM1_CH2N (AF1), TIM8_CH2N (AF2)
-        if (pin == 1) return 0x2U; // TIM3_CH4 (AF2), TIM1_CH3N (AF1), TIM8_CH3N (AF2)
-        if (pin == 3) return 0x1U; // TIM2_CH2 (AF1), TIM3_ETR (AF2)
-        if (pin == 4) return 0x2U; // TIM3_CH1 (AF2), TIM17_BKIN (AF14)
-        if (pin == 5) return 0x2U; // TIM3_CH2 (AF2), LPTIM1_IN1 (AF1), TIM16_BKIN (AF14)
-        if (pin == 6) return 0x2U; // TIM4_CH1 (AF2), LPTIM1_ETR (AF1), TIM8_BKIN2 (AF2), TIM16_CH1N (AF14)
-        if (pin == 7) return 0x2U; // TIM4_CH2 (AF2), LPTIM1_IN2 (AF1), TIM8_BKIN (AF2), TIM17_CH1N (AF14)
-        if (pin == 8) return 0x2U; // TIM4_CH3 (AF2), TIM16_CH1 (AF14)
-        if (pin == 9) return 0x2U; // TIM4_CH4 (AF2), TIM17_CH1 (AF14)
-        if (pin == 10) return 0x1U; // TIM2_CH3 (AF1)
-        if (pin == 11) return 0x1U; // TIM2_CH4 (AF1)
-        if (pin == 14) return 0xEU; // TIM1_CH2N (AF1), TIM8_CH2N (AF3), TIM15_CH1 (AF14)
-        if (pin == 15) return 0xEU; // TIM1_CH3N (AF1), TIM8_CH3N (AF3), TIM15_CH2 (AF14)
-    } else if(GPIOx == 2) {
-        if (pin == 6) return 0x2U; // TIM3_CH1 (AF2), TIM8_CH1 (AF2)
-        if (pin == 7) return 0x2U; // TIM3_CH2 (AF2), TIM8_CH2 (AF2)
-        if (pin == 8) return 0x2U; // TIM3_CH3 (AF2), TIM8_CH3 (AF2)
-        if (pin == 9) return 0x2U; // TIM3_CH4 (AF2), TIM8_CH4 (AF2), TIM8_BKIN2 (AF2), TIM8_BKIN2_COMP1 (AF9)
-    } else if(GPIOx == 3) {
-        if (pin == 12) return 0x2U; // TIM4_CH1 (AF2)
-        if (pin == 13) return 0x2U; // TIM4_CH2 (AF2)
-        if (pin == 14) return 0x2U; // TIM4_CH3 (AF2)
-        if (pin == 15) return 0x2U; // TIM4_CH4 (AF2)
-    } else if(GPIOx == 4) {
-        if (pin == 0) return 0x2U; // TIM4_ETR (AF2), TIM16_CH1 (AF14)
-        if (pin == 1) return 0xEU; // TIM17_CH1 (AF14)
-        if (pin == 3) return 0x2U; // TIM3_CH1 (AF2)
-        if (pin == 4) return 0x2U; // TIM3_CH2 (AF2)
-        if (pin == 5) return 0x2U; // TIM3_CH3 (AF2)
-        if (pin == 6) return 0x2U; // TIM3_CH4 (AF2)
-        if (pin == 9) return 0x1U; // TIM1_CH1 (AF1)
-        if (pin == 11) return 0x1U; // TIM1_CH2 (AF1)
-        if (pin == 13) return 0x1U; // TIM1_CH3 (AF1)
-        if (pin == 14) return 0x1U; // TIM1_CH4 (AF1), TIM1_BKIN2 (AF2), TIM1_BKIN2_COMP2 (AF3)
-    } else if(GPIOx == 5) {
-        if (pin == 6) return 0x2U; // TIM5_ETR (AF1), TIM5_CH1 (AF2) - Prioritizing AF1/AF2
-        if (pin == 7) return 0x2U; // TIM5_CH2 (AF2)
-        if (pin == 8) return 0x2U; // TIM5_CH3 (AF2)
-        if (pin == 9) return 0x2U; // TIM5_CH4 (AF2)
-    } else if(GPIOx == 6) {
-        if (pin == 10) return 0xEU; // LPTIM1_IN1 (AF1), TIM15_CH1 (AF14)
-        if (pin == 11) return 0xEU; // LPTIM1_IN2 (AF1), TIM15_CH2 (AF14)
-    }
-    return 0xFFU;
+    if(Timer == TIM1) tim_activate(1);
+    else if(Timer == TIM2) tim_activate(2);
+    else if(Timer == TIM3) tim_activate(3);
+    else if(Timer == TIM4) tim_activate(4);
+    else if(Timer == TIM5) tim_activate(5);
+    else if(Timer == TIM6) tim_activate(6);
+    else if(Timer == TIM7) tim_activate(7);
+    else if(Timer == TIM8) tim_activate(8);
+    else if(Timer == TIM15) tim_activate(15);
+    else if(Timer == TIM16) tim_activate(16);
+    else if(Timer == TIM17) tim_activate(17);
+    else return;
 }
 
 void pwm_init(pwm_config_t *config)
 {
     GeneralPurpose_Timer_t *TIMx = config->pwmTimer;
-    timer_channel_t channel = config->pwmChannel;
 
-    tim_activate(get_gptim_number(TIMx));
-    return;
+    // 1. Enable Timer Clock
+    timer_clock_enable(TIMx);
+
+    // 2. Configure GPIO pin for Alternate Function
+    gpio_af_map_t gpio = gpio_timmer_map(TIMx, config->pwmChannel);
+    if(gpio.GPIOx == 0)
+        return; // Exit if no valid pin mapping found
+    configure_gpio_pwm(gpio.GPIOx, gpio.pin, gpio.afNumber);
+
+    // 3. Configure Timer Base: Prescaler and Period
+    TIMx->PSC = config->prescaler - 1;
+    TIMx->ARR = config->period - 1;
+
+    // 4. Configure PWM Channel
+    volatile uint32_t *ccmr_reg = (config->pwmChannel < TIM_CHANNEL3) ? &TIMx->CCMR1 : &TIMx->CCMR2;
+    uint8_t shift = (config->pwmChannel % 2) * 8;   // 0 for ch1/3, 8 for ch2/4
+
+    // Set PWM Mode 1 (OCxM bits = 110) and enable Preload (OCxPE bit = 1)
+    // Preload enable is crucial for glitch-free duty cycle updates.
+    *ccmr_reg &= ~((0x7U << (4 + shift)) | (0x1U << (3 + shift))); // Clear previous settings
+    *ccmr_reg |= (0x6U << (4 + shift));   // OCxM = 110 for PWM Mode 1
+    *ccmr_reg |= (0x1U << (3 + shift));   // OCxPE = 1 (Output Compare Preload Enable)
+
+    // 5. Enable the specific PWM Channel Output
+    TIMx->CCER |= (0x1U << (4 * config->pwmChannel));
+
+    // 6. Main Output Enable and Counter Start
+    TIMx->CR1 |= (0x1U << 7);   // ARPE: Auto-reload preload enable
+    TIMx->EGR |= (0x1U << 0);   // UG: Generate and update event to load PSC and ARR
+    TIMx->CR1 |= (0x1U << 0);   // CEN: Counter enable. Starts the timer.
+}
+
+void pwm_set_dutyCycle(GeneralPurpose_Timer_t *TIMx, timer_channel_t channel, int dutyCycle)
+{
+    if(dutyCycle < 0 || dutyCycle > 100)
+        return;
+
+    // The period is the value in ARR + 1
+    uint32_t period = TIMx->ARR;
+    uint32_t crrValue = ((period + 1) * dutyCycle) / 100;
+
+    switch (channel) {
+        case TIM_CHANNEL1: TIMx->CCR1 = crrValue; break;
+        case TIM_CHANNEL2: TIMx->CCR2 = crrValue; break;
+        case TIM_CHANNEL3: TIMx->CCR3 = crrValue; break;
+        case TIM_CHANNEL4: TIMx->CCR4 = crrValue; break;
+        default: return;
+    }
 }

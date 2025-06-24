@@ -53,6 +53,12 @@ typedef struct {
 	volatile uint32_t ASCR;
 }gpio_t;
 
+typedef struct {
+	gpio_t *GPIOx;
+	PINx pin;
+	uint8_t afNumber;
+}gpio_af_map_t;
+
 /**
  * @brief Tranforma la dirección de un GPIO en un entero
  *
