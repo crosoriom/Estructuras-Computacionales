@@ -24,6 +24,9 @@ typedef struct {
     volatile uint32_t PR2;
 }ExtendedInterrupts_t;
 
+/**
+ * @brief Enumeration for the interrupt trigger type.
+ */
 typedef enum {
     RISING_EDGE,
     FALLING_EDGE,
@@ -48,7 +51,7 @@ typedef enum {
  * @note Si solo se desea establecer el pin como salida y no activar
  * su interrupción, vease configure_gpio_input().
  */
-void gpio_interrupt_enable(gpio_t *GPIOx, PINx pin, Trigger_t trigger);
+void exti_gpio_init(gpio_t *GPIOx, PINx pin, Trigger_t trigger);
 
 /**
  * @brief Activa las interrupciones de UART.
