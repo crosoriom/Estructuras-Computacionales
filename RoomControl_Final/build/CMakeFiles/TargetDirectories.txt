@@ -1,0 +1,3 @@
+/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build/CMakeFiles/RoomControl_Final.dir
+/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build/CMakeFiles/edit_cache.dir
+/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build/CMakeFiles/rebuild_cache.dir

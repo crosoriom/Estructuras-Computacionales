@@ -1,0 +1,110 @@
+[
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -mcpu=cortex-m4 -mthumb -x assembler-with-cpp -o CMakeFiles/RoomControl_Final.dir/startup_stm32l476rgtx.s.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/startup_stm32l476rgtx.s",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/startup_stm32l476rgtx.s",
+  "output": "CMakeFiles/RoomControl_Final.dir/startup_stm32l476rgtx.s.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/drivers/ringBuffer/ringBuffer.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/ringBuffer/ringBuffer.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/ringBuffer/ringBuffer.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/drivers/ringBuffer/ringBuffer.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/drivers/keyPad/keypad.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/keyPad/keypad.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/keyPad/keypad.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/drivers/keyPad/keypad.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/drivers/SSD1306/ssd1306.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/SSD1306/ssd1306.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/SSD1306/ssd1306.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/drivers/SSD1306/ssd1306.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/drivers/SSD1306/font.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/SSD1306/font.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/SSD1306/font.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/drivers/SSD1306/font.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/systick.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/systick.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/systick.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/systick.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/syscfg.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/syscfg.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/syscfg.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/syscfg.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/flash.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/flash.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/flash.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/flash.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/main.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/main.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/main.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/main.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/gpio.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/gpio.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/gpio.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/gpio.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/exti.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/exti.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/exti.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/exti.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/nvic.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/nvic.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/nvic.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/nvic.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/uart.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/uart.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/uart.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/uart.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/i2c.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/i2c.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/i2c.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/i2c.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/tim.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/tim.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/tim.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/tim.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/src/rcc.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/rcc.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/rcc.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/src/rcc.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/User/syscalls.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User/syscalls.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User/syscalls.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/User/syscalls.c.o"
+},
+{
+  "directory": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/build",
+  "command": "arm-none-eabi-gcc  -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src -I/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mthumb -O2 -o CMakeFiles/RoomControl_Final.dir/User/sysmem.c.o -c /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User/sysmem.c",
+  "file": "/home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/User/sysmem.c",
+  "output": "CMakeFiles/RoomControl_Final.dir/User/sysmem.c.o"
+}
+]

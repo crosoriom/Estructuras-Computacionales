@@ -1,0 +1,29 @@
+CMakeFiles/RoomControl_Final.dir/src/main.c.o: \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/src/main.c \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/main.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdint.h \
+ /usr/arm-none-eabi/include/stdint.h \
+ /usr/arm-none-eabi/include/machine/_default_types.h \
+ /usr/arm-none-eabi/include/sys/features.h \
+ /usr/arm-none-eabi/include/_newlib_version.h \
+ /usr/arm-none-eabi/include/sys/_intsup.h \
+ /usr/arm-none-eabi/include/sys/_stdint.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/ringBuffer/ringBuffer.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.0/include/stdbool.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/SSD1306/ssd1306.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/systick.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/SSD1306/font.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/i2c.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/gpio.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/rcc.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/flash.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/keyPad/keypad.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/drivers/ringBuffer/ringBuffer.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/gpio.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/exti.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/syscfg.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/nvic.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/systick.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/uart.h \
+ /home/cristian/Documents/UNAL/EstructurasComputacionales/Trabajos/RoomControl_Final/inc/i2c.h
